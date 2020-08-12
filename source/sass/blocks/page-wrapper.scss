@@ -1,0 +1,13 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $gray-color;
+  background-image: url("../img/bg-dots.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-dots@2x.png");
+  }
+}

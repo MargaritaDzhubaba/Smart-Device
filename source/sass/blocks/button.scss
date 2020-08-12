@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  padding: 14px;
+  text-align: center;
+
+  font-family: $font-roboto-condense;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: $main-color;
+  background-color: transparent;
+
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

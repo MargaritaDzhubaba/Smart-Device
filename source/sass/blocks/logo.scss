@@ -1,0 +1,35 @@
+.logo__link {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo__image {
+  margin-right: 16px;
+}
+
+.logo__wrapper {
+  h1 {
+    margin: 0;
+
+    font-family: $font-roboto-condense;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: bold;
+
+    color: $main-color;
+
+  }
+
+  p {
+    margin: 0;
+
+    font-family: "Roboto", "Aria", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: lowercase;
+
+    color: $logo-light-color;
+  }
+}

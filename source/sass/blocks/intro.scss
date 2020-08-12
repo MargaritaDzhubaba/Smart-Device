@@ -1,0 +1,95 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 173px;
+  padding-bottom: 108px;
+
+  width: 100%;
+  max-width: 1411px;
+  margin: 0 auto;
+
+  font-family: $font-pt-mono;
+  font-size: 22px;
+  line-height: 34px;
+
+  color: $main-color;
+
+  background-color: transparent;
+  background-image: url("../img/bg-triangles.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  width: 718px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 31px;
+
+    font-family: $font-roboto-condense;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 94px;
+
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  p {
+    position: relative;
+
+    margin: 0;
+    margin-bottom: 37px;
+    padding-left: 94px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 15px;
+      left: 0;
+
+      width: 66px;
+      height: 2px;
+      background-color: $main-color;
+    }
+  }
+}
+
+.intro__link {
+  width: 407px;
+  margin-left: 94px;
+  margin-bottom: 93px;
+  padding: 15px 28px;
+
+  background-color: $accent-color;
+  border: none;
+}
+
+.intro__link-span--mobile {
+  display: none;
+}
+
+.intro__scroll {
+  position: relative;
+  right: 40px;
+
+  display: block;
+  width: 93px;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $main-color;
+
+  opacity: 0.5;
+  transform: rotate(-90deg);
+}
+
+.intro__image {
+  width: 705px;
+  height: 515px;
+}
