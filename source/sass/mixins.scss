@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+@mixin transition {
+  transition: all ease 0.3s;
+}
+
 @mixin wrapper {
   margin: 0 auto;
   max-width: 1411px;

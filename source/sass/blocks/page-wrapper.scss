@@ -6,8 +6,31 @@
   background-image: url("../img/bg-dots.png");
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-dots@2x.png");
   }
 }
+
+// @media (max-width: $tablet-width-only) {
+//   .page-wrapper {
+//     background-image: url("../img/bg-dots-tablet.png");
+
+//     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//       background-image: url("../img/bg-dots-tablet@2x.png");
+//     }
+//   }
+// }
+
+// @media (max-width: $mobile-width-only) {
+//   .page-wrapper {
+//     background-image: url("../../img/bg-triangles-mobile.png");
+
+//     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//       background-image: url("../img/bg-dots-mobile@2x.png");
+//     }
+//   }
+// }

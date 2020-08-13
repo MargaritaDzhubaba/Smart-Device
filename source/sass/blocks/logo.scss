@@ -22,6 +22,7 @@
 
   p {
     margin: 0;
+    margin-bottom: 3px;
 
     font-family: "Roboto", "Aria", sans-serif;
     font-size: 12px;
@@ -31,5 +32,16 @@
     text-transform: lowercase;
 
     color: $logo-light-color;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo__image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo__wrapper {
+    display: none;
   }
 }

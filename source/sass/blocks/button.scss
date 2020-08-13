@@ -19,10 +19,14 @@
 
   &:hover,
   &:focus {
+    @include transition;
+
     opacity: 0.5;
   }
 
   &:active {
+    @include transition;
+
     opacity: 0.7;
   }
 }
