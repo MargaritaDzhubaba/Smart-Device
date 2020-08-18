@@ -1,16 +1,18 @@
 .intro {
+  @include wrapper;
+
   position: relative;
 
   display: flex;
   justify-content: space-between;
 
-  width: 100%;
-  max-width: 1511px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 232px;
-  padding-bottom: 260px;
-  margin: 0 auto;
+  // width: 100%;
+  // max-width: 1511px;
+  padding-left: 52px;
+  padding-right: 53px;
+  padding-top: 231px;
+  padding-bottom: 259px;
+  // margin: 0 auto;
 
   font-family: $font-pt-mono;
   font-size: 22px;
@@ -58,7 +60,7 @@
 
   h2 {
     margin: 0;
-    margin-left: -5px;
+    margin-left: -4px;
     margin-bottom: 25px;
 
     font-family: $font-roboto-condense;
@@ -74,8 +76,8 @@
     position: relative;
 
     margin: 0;
-    margin-bottom: 44px;
-    padding-left: 93px;
+    margin-bottom: 45px;
+    padding-left: 94px;
 
     text-transform: lowercase;
 
@@ -83,8 +85,8 @@
       content: "";
 
       position: absolute;
-      top: 17px;
-      left: -2px;
+      top: 18px;
+      left: 0;
 
       width: 66px;
       height: 2px;
@@ -96,7 +98,7 @@
 .intro__link {
   width: 407px;
   min-height: 55px;
-  margin-left: 92px;
+  margin-left: 94px;
   padding: 17px 28px;
 
   font-size: 16px;
@@ -134,12 +136,12 @@
     padding-top: 118px;
     padding-bottom: 163px;
 
-    background-image: url("../../img/bg-triangles-tablet.png");
+    background-image: url("../img/bg-triangles-tablet.png");
     background-size: 529px 506px;
     background-position: 440px -112px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-triangles-tablet2x.png");
+      background-image: url("../img/bg-triangles-tablet2x.png");
     }
 
     &::after {
@@ -203,10 +205,10 @@
 
     background-image: url("../img/bg-triangles-mobile.png");
     background-size: 506px 484px;
-    background-position: 440px -112px;
+    background-position: 151px -102px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-triangles-mobile2x.png");
+      background-image: url("../img/bg-triangles-mobile@2x.png");
     }
 
     &::after {

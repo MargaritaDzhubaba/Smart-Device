@@ -11,13 +11,21 @@
 
 @mixin wrapper {
   margin: 0 auto;
-  max-width: 1411px;
+  max-width: 1514px;
 
-  // @media (min-width: $mobile-width) {
-  //   width: 100%;
-  // }
+  @media (min-width: $mobile-width) {
+    width: 100%;
+  }
 
-  // @media (min-width: $tablet-width) {
-  //   width: 100%;
-  // }
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 53px;
+  }
 }

@@ -1,0 +1,135 @@
+.feedback {
+  padding: 92px 0 112px;
+
+  background-color: $accent-color;
+  background-image: url("../img/bg-form.png");
+  background-repeat: no-repeat;
+  background-position: 170px -65px;
+  background-size: cover;
+}
+
+.feedback__wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 69px;
+    left: 25px;
+
+    width: 511px;
+    height: 288px;
+
+    background-image: url("../img/airplane.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/airplane@2x.png");
+      background-size: 511px 288px;
+    }
+  }
+}
+
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 570px;
+
+  color: $main-color;
+  z-index: 100;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 8px;
+    margin-left: -4px;
+
+    font-family: $font-roboto-condense;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+
+    color: $main-color;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-family: $font-pt-mono;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $main-color;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .feedback {
+    padding: 81px 0 103px;
+
+    background-image: none;
+  }
+
+  .feedback__wrapper {
+    padding-left: 93px;
+    padding-right: 82px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .feedback__container {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 16px;
+      margin-left: -5px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    p {
+      margin-bottom: 53px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .feedback {
+    padding: 30px 0 43px;
+  }
+
+  .feedback__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .feedback__container {
+    h2 {
+      margin-bottom: 13px;
+      margin-left: 0;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}

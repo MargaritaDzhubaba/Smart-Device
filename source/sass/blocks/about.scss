@@ -1,0 +1,162 @@
+.about {
+  @include wrapper;
+  position: relative;
+
+  padding-bottom: 111px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 174px;
+
+    width: 118px;
+    height: 305px;
+
+    background-color: $main-color;
+    background-image: url("../img/year.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/year@2x.png");
+    }
+  }
+}
+
+.about__info {
+  padding-left: 302px;
+  padding-right: 125px;
+
+  h2 {
+    margin: 0;
+    margin-top: -4px;
+    margin-bottom: 19px;
+
+    font-family: $font-roboto-condense;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+
+    color: $text-color;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-family: $font-pt-mono;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $text-color;
+
+    &:last-of-type {
+      margin-bottom: 39px;
+    }
+  }
+}
+
+.about__button {
+  width: 180px;
+  padding-top: 13px;
+
+  color: $accent-color;
+  border-color: $accent-color;
+}
+
+@media (max-width: $tablet-width-only) {
+  .about {
+    padding-bottom: 83px;
+
+    &::before {
+      top: 4px;
+      left: 28px;
+
+      width: 131px;
+      height: 348px;
+
+      background-color: $main-color;
+      background-image: url("../img/year.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/year@2x.png");
+      }
+    }
+  }
+
+  .about__info {
+    padding-left: 188px;
+    padding-right: 0;
+
+    h2 {
+      margin-left: -3px;
+      margin-bottom: 25px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    p {
+      &:last-of-type {
+        margin-bottom: 41px;
+      }
+    }
+
+    .about__hidden-text {
+      display: none;
+    }
+  }
+
+  .about__button {
+    width: 180px;
+    padding-top: 13px;
+
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .about {
+    padding-left: 17px;
+    padding-right: 15px;
+    padding-bottom: 66px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .about__info {
+    padding-left: 0;
+
+    h2 {
+      margin-bottom: 20px;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 29px;
+      }
+    }
+  }
+
+  .about__button {
+    width: 180px;
+    padding-top: 13px;
+
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}

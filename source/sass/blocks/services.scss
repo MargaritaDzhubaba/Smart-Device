@@ -1,0 +1,238 @@
+.services {
+  padding: 89px 0 128px;
+
+  background-color: $gray-color;
+}
+
+.services__wrapper {
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-family: $font-roboto-condense;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+
+    color: $main-color;
+  }
+}
+
+.services__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.services__item {
+  position: relative;
+
+  width: 31.62%;
+
+  font-family: $font-roboto-condense;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: $main-color;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 63px;
+    height: 63px;
+
+    background-color: $accent-color;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.services__link {
+  @include transition;
+
+  display: flex;
+  width: 100%; //370px
+  height: 620px;
+
+  padding: 51px 44px;
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--img-one {
+    background-image: url("../img/serveces-img-one.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/serveces-img-one@2x.png");
+    }
+  }
+
+  &--img-two {
+    background-image: url("../img/serveces-img-two.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/serveces-img-two@2x.png");
+    }
+  }
+
+  &--img-three {
+    background-image: url("../img/serveces-img-three.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/serveces-img-three@2x.png");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 4px $accent-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  h3 {
+    width: 172px;
+    margin: 0;
+
+    font-family: $font-roboto-condense;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: $main-color;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .services {
+    padding: 50px 0 32px;
+  }
+
+  .services__wrapper {
+    padding-left: 26px;
+    padding-right: 22px;
+
+    h2 {
+      margin-bottom: 49px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
+  .services__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__item {
+    width: 100%;
+
+    margin-bottom: 46px;
+  }
+
+  .services__link {
+    width: 100%;
+    height: 256px;
+
+    padding: 40px 44px;
+
+    &--img-one {
+      background-image: url("../img/serveces-img-one-tablet.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/serveces-img-one-tablet@2x.png");
+      }
+    }
+
+    &--img-two {
+      background-image: url("../img/serveces-img-two-tablet.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/serveces-img-two-tablet@2x.png");
+      }
+    }
+
+    &--img-three {
+      background-image: url("../img/serveces-img-three-tablet.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/serveces-img-three-tablet@2x.png");
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .services {
+    padding: 50px 0 34px;
+  }
+
+  .services__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h2 {
+      margin-bottom: 42px;
+      padding-left: 10px;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+
+  .services__item {
+    width: 100%;
+
+    margin-bottom: 30px;
+  }
+
+  .services__link {
+    padding: 20px 35px;
+
+    &--img-one {
+      background-image: url("../img/serveces-img-one-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/serveces-img-one-mobile@2x.png");
+      }
+    }
+
+    &--img-two {
+      background-image: url("../img/serveces-img-two-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/serveces-img-two-mobile@2x.png");
+      }
+    }
+
+    &--img-three {
+      background-image: url("../img/serveces-img-three-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/serveces-img-three-mobile@2x.png");
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.advantages-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $main-color;
+  background-image: url("../img/bg-advantages.png");
+  background-position: -296px -29px;
+  background-repeat: no-repeat;
+  background-size: 2243px 1347px;
+
+  overflow: hidden;
+
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/bg-dots@2x.png");
+  // }
+}

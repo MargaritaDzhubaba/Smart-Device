@@ -1,13 +1,15 @@
 .page-header {
+  @include wrapper;
+
   display: flex;
   align-items: center;
-
-  width: 100%;
-  max-width: 1514px;
   padding-top: 33px;
+  // width: 100%;
+  // max-width: 1514px;
+
   padding-left: 50px;
   padding-right: 53px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .page-header__logo {
@@ -69,7 +71,6 @@
 .page-header__button {
   width: 180px;
   margin-left: 49px;
-  padding: 8px;
 
   letter-spacing: 0.05em;
 
@@ -83,10 +84,10 @@
 
 @media (max-width: $tablet-width-only) {
   .page-header {
-    width: 100%;
+    // width: 100%;
+    // padding-left: 25px;
+    // padding-right: 25px;
     padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   .page-header__contacts-item {
@@ -122,6 +123,7 @@
 
 @media (max-width: $mobile-width-only) {
   .page-header {
+    width: 100%;
     padding-top: 17px;
     padding-left: 17px;
     padding-right: 15px;
