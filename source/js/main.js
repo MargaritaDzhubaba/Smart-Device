@@ -64,16 +64,16 @@ var feedback = document.querySelector('#feedback');
 introLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   feedback.scrollIntoView({
-    block: 'start',
-    behavior: 'smooth'
+    behavior: 'smooth',
+    block: 'start'
   });
 });
 
 introScroll.addEventListener('click', function (evt) {
   evt.preventDefault();
   advantages.scrollIntoView({
-    block: 'start',
-    behavior: 'smooth'
+    behavior: 'smooth',
+    block: 'start'
   });
 });
 
