@@ -19,15 +19,12 @@
 
   <div class="header-wrapper">
     <header class="page-header">
-      <div class="page-header__logo logo">
-        <a class=" logo__link">
-          <svg class="logo__image" width="52" height="52">
-            <use xlink:href="#sprite-icon-logo"></use>
-          </svg>
-          <div class="logo__wrapper">
-            <h1>Smart Device</h1>
-            <p>Умные технологии</p>
-          </div>
+      <div class="page-header__logo">
+        <a class="page-header__link">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-header-mobile.svg">
+            <img src="img/logo-header.svg" width="202" height="52" alt="Логотип Smart Device">
+          </picture>
         </a>
       </div>
       <ul class="page-header__contacts-list">
@@ -181,13 +178,7 @@
         <div class="page-footer__social">
           <div class="page-footer__logo logo">
             <a class=" logo__link">
-              <svg class="logo__image" width="52" height="52">
-                <use xlink:href="#sprite-icon-logo"></use>
-              </svg>
-              <div class="logo__wrapper">
-                <b>Service Device</b>
-                <p>Умные технологии</p>
-              </div>
+              <img src="img/logo-footer.svg" width="216" height="52" alt="Логотип Smart Device">
             </a>
           </div>
           <p class="page-footer__info">1999-2018 SD Service Devices</p>

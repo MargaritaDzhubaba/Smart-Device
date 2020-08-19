@@ -10,7 +10,7 @@
   // max-width: 1511px;
   padding-left: 52px;
   padding-right: 53px;
-  padding-top: 231px;
+  padding-top: 225px;
   padding-bottom: 259px;
   // margin: 0 auto;
 
@@ -24,7 +24,7 @@
   background-image: url("../img/bg-triangles.png");
   background-size: 1920px 881px;
   background-repeat: no-repeat;
-  background-position: center -85px;
+  background-position: center -90px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-triangles@2x.png");
@@ -34,7 +34,7 @@
     content: "";
 
     position: absolute;
-    top: 173px;
+    top: 167px;
     right: -27px;
 
     width: 705px;
@@ -133,20 +133,20 @@
   .intro {
     padding-left: 88px;
     padding-right: 150px;
-    padding-top: 118px;
+    padding-top: 111px;
     padding-bottom: 163px;
 
     background-image: url("../img/bg-triangles-tablet.png");
     background-size: 529px 506px;
-    background-position: 440px -112px;
+    background-position: 440px -118px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-triangles-tablet2x.png");
     }
 
     &::after {
-      top: 41px;
-      right: -204px;
+      top: 33px;
+      right: -207px;
 
       width: 465px;
       height: 340px;
@@ -163,7 +163,7 @@
     h2 {
       margin: 0;
       margin-left: 0;
-      margin-bottom: 27px;
+      margin-bottom: 28px;
 
       font-size: 60px;
       line-height: 70px;
@@ -198,21 +198,21 @@
 
 @media (max-width: $mobile-width-only) {
   .intro {
-    padding-top: 231px;
+    padding-top: 225px;
     padding-right: 15px;
     padding-bottom: 70px;
     padding-left: 15px;
 
     background-image: url("../img/bg-triangles-mobile.png");
     background-size: 506px 484px;
-    background-position: 151px -102px;
+    background-position: 151px -108px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-triangles-mobile@2x.png");
     }
 
     &::after {
-      top: 37px;
+      top: 31px;
       right: -7px;
 
       width: 301px;
@@ -228,6 +228,8 @@
     width: 100%;
 
     h2 {
+      margin-bottom: 27px;
+
       font-size: 40px;
       line-height: 47px;
     }
