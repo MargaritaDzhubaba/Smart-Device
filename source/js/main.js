@@ -17,6 +17,7 @@ if (headerButton) {
     if (modal.classList.contains('modal--close')) {
       modal.classList.remove('modal--close');
       overlay.classList.remove('overlay--close');
+      body.classList.add('overflow');
       nameField.focus();
     }
   });
