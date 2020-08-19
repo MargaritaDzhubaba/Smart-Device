@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.advantages-list {
+.advantages__list {
   @include reset-list;
 
   display: flex;
@@ -15,7 +15,7 @@
   padding-bottom: 80px;
 }
 
-.advantages-item {
+.advantages__item {
   position: relative;
 
   width: 48.7%; //570px
@@ -87,12 +87,12 @@
     padding-right: 24px;
   }
 
-  .advantages-list {
+  .advantages__list {
     padding-top: 54px;
     padding-bottom: 29px;
   }
 
-  .advantages-item {
+  .advantages__item {
     position: relative;
 
     width: 47.9%; //345px
@@ -126,7 +126,7 @@
     justify-content: center;
   }
 
-  .advantages-list {
+  .advantages__list {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -135,7 +135,7 @@
     padding-bottom: 40px;
   }
 
-  .advantages-item {
+  .advantages__item {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
