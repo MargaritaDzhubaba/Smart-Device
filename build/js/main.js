@@ -1,3 +1,4 @@
+/* eslint-disable new-cap, no-undef */
 'use strict';
 // Открыть-закрыть модальное окно
 var ESC_KEY = 'Escape';
@@ -61,50 +62,56 @@ var introScroll = document.querySelector('.intro__scroll');
 var advantages = document.querySelector('#advantages');
 var feedback = document.querySelector('#feedback');
 
-introLink.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  feedback.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+if (introLink) {
+  introLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    feedback.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   });
-});
+}
 
-introScroll.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  advantages.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+if (introScroll) {
+  introScroll.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    advantages.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   });
-});
+}
 
 // Открывает и закрывает Аккордеон
 var accordions = document.querySelectorAll('.page-footer__accordion');
 var accordionsButton = document.querySelectorAll('.page-footer__button-accordion');
 var accordionsList = document.querySelectorAll('.page-footer__accordion-list');
 
-accordions.forEach(function (accordion) {
-  var button = accordion.querySelector('.page-footer__button-accordion');
-  var list = accordion.querySelector('.page-footer__accordion-list');
+if(accordions) {
+  accordions.forEach(function (accordion) {
+    var button = accordion.querySelector('.page-footer__button-accordion');
+    var list = accordion.querySelector('.page-footer__accordion-list');
 
-  button.addEventListener('click', function () {
-    if (button.classList.contains('page-footer__button-accordion--opened')) {
-      button.classList.remove('page-footer__button-accordion--opened');
-    } else {
-      accordionsButton.forEach(function (accordionButton) {
-        accordionButton.classList.remove('page-footer__button-accordion--opened');
-      });
-      button.classList.add('page-footer__button-accordion--opened');
-    }
-    if (list.classList.contains('page-footer__accordion-list--opened')) {
-      list.classList.remove('page-footer__accordion-list--opened');
-    } else {
-      accordionsList.forEach(function (accordionList) {
-        accordionList.classList.remove('page-footer__accordion-list--opened');
-      });
-      list.classList.add('page-footer__accordion-list--opened');
-    }
+    button.addEventListener('click', function () {
+      if (button.classList.contains('page-footer__button-accordion--opened')) {
+        button.classList.remove('page-footer__button-accordion--opened');
+      } else {
+        accordionsButton.forEach(function (accordionButton) {
+          accordionButton.classList.remove('page-footer__button-accordion--opened');
+        });
+        button.classList.add('page-footer__button-accordion--opened');
+      }
+      if (list.classList.contains('page-footer__accordion-list--opened')) {
+        list.classList.remove('page-footer__accordion-list--opened');
+      } else {
+        accordionsList.forEach(function (accordionList) {
+          accordionList.classList.remove('page-footer__accordion-list--opened');
+        });
+        list.classList.add('page-footer__accordion-list--opened');
+      }
+    });
   });
-});
+}
 
 // Валидация для телефона
 var phone = document.querySelector('#phone');
@@ -144,18 +151,20 @@ if (storage) {
   messageInput.value = storage.messageInput;
 }
 
-feedbackForm.addEventListener('submit', function (evt) {
-  if (!nameInput.value || !phoneInput.value || !messageInput.value) {
-    evt.preventDefault();
+if (feedbackForm) {
+  feedbackForm.addEventListener('submit', function (evt) {
+    if (!nameInput.value || !phoneInput.value || !messageInput.value) {
+      evt.preventDefault();
 
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem('nameInput', nameInput.value);
-      localStorage.setItem('phoneInput', phoneInput.value);
-      localStorage.setItem('messageInput', messageInput.value);
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem('nameInput', nameInput.value);
+        localStorage.setItem('phoneInput', phoneInput.value);
+        localStorage.setItem('messageInput', messageInput.value);
+      }
     }
-  }
-});
+  });
+}
 
 try {
   storage.nameInputModal = localStorage.getItem('nameInputModal');
@@ -172,15 +181,17 @@ if (storage) {
   messageInputModal.value = storage.messageInputModal;
 }
 
-modalForm.addEventListener('submit', function (evt) {
-  if (!nameInputModal.value || !phoneInputModal.value || !messageInputModal.value) {
-    evt.preventDefault();
+if (modalForm) {
+  modalForm.addEventListener('submit', function (evt) {
+    if (!nameInputModal.value || !phoneInputModal.value || !messageInputModal.value) {
+      evt.preventDefault();
 
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem('nameInputModal', nameInputModal.value);
-      localStorage.setItem('phoneInputModal', phoneInputModal.value);
-      localStorage.setItem('messageInputModal', messageInputModal.value);
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem('nameInputModal', nameInputModal.value);
+        localStorage.setItem('phoneInputModal', phoneInputModal.value);
+        localStorage.setItem('messageInputModal', messageInputModal.value);
+      }
     }
-  }
-});
+  });
+}
