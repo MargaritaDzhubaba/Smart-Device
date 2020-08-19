@@ -93,6 +93,9 @@ if(accordions) {
     var button = accordion.querySelector('.page-footer__button-accordion');
     var list = accordion.querySelector('.page-footer__accordion-list');
 
+    button.classList.remove('page-footer__button-accordion--nojs');
+    list.classList.remove('page-footer__accordion-list--nojs');
+
     button.addEventListener('click', function () {
       if (button.classList.contains('page-footer__button-accordion--opened')) {
         button.classList.remove('page-footer__button-accordion--opened');

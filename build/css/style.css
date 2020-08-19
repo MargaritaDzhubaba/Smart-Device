@@ -162,6 +162,7 @@ input[type="radio"].visually-hidden {
   .page-header__contacts-link--mail svg {
     margin-right: 20px; }
   .page-header__contacts-link--tel svg {
+    margin-top: -3px;
     margin-right: 16px; }
   .page-header__contacts-link:hover, .page-header__contacts-link:focus {
     -webkit-transition: all ease 0.3s;
@@ -770,11 +771,15 @@ input[type="radio"].visually-hidden {
     background-position: center; }
     .page-footer__button-accordion--opened {
       background-image: url("../img/icon-minus.svg"); }
+    .page-footer__button-accordion--nojs {
+      background-image: none; }
   .page-footer__accordion-list {
     display: none;
     padding-top: 31px; }
-  .page-footer__accordion-list--opened {
-    display: block; }
+    .page-footer__accordion-list--opened {
+      display: block; }
+    .page-footer__accordion-list--nojs {
+      display: block; }
   .page-footer__nav-list {
     margin-right: 0; }
   .page-footer__contacts {

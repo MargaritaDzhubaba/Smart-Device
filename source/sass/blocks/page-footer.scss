@@ -390,15 +390,23 @@
     &--opened {
       background-image: url("../img/icon-minus.svg");
     }
+
+    &--nojs {
+      background-image: none;
+    }
   }
 
   .page-footer__accordion-list {
     display: none;
     padding-top: 31px;
-  }
 
-  .page-footer__accordion-list--opened {
-    display: block;
+    &--opened {
+      display: block;
+    }
+
+    &--nojs {
+      display: block;
+    }
   }
 
   .page-footer__nav-list {
