@@ -366,10 +366,19 @@
     }
   }
 
+  .page-footer__nav,
+  .page-footer__contacts {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .page-footer__nav-capture,
   .page-footer__contacts-capture {
     display: flex;
     justify-content: space-between;
+
+    padding-top: 29px;
+    padding-bottom: 27px;
 
     h2 {
       margin-bottom: 0;
@@ -398,7 +407,7 @@
 
   .page-footer__accordion-list {
     display: none;
-    padding-top: 31px;
+    padding-top: 3px;
 
     &--opened {
       display: block;
@@ -415,8 +424,6 @@
 
   .page-footer__contacts {
     width: 100%;
-    padding-top: 28px;
-    padding-bottom: 26px;
     padding-right: 0;
   }
 

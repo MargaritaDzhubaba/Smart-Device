@@ -87,16 +87,18 @@ if (introScroll) {
 var accordions = document.querySelectorAll('.page-footer__accordion');
 var accordionsButton = document.querySelectorAll('.page-footer__button-accordion');
 var accordionsList = document.querySelectorAll('.page-footer__accordion-list');
+var accordionsOpen = document.querySelectorAll('.page-footer__accordion-open-block');
 
 if(accordions) {
   accordions.forEach(function (accordion) {
     var button = accordion.querySelector('.page-footer__button-accordion');
     var list = accordion.querySelector('.page-footer__accordion-list');
+    var openBlock = accordion.querySelector('.page-footer__accordion-open-block');
 
     button.classList.remove('page-footer__button-accordion--nojs');
     list.classList.remove('page-footer__accordion-list--nojs');
 
-    button.addEventListener('click', function () {
+    openBlock.addEventListener('click', function () {
       if (button.classList.contains('page-footer__button-accordion--opened')) {
         button.classList.remove('page-footer__button-accordion--opened');
       } else {
@@ -134,68 +136,25 @@ var nameInput = feedbackForm.querySelector('#name');
 var nameInputModal = document.querySelector('#name-modal');
 var phoneInput = feedbackForm.querySelector('#phone');
 var phoneInputModal = document.querySelector('#phone-modal');
-var messageInput = feedbackForm.querySelector('#message');
+var messageInput = feedbackForm.querySelector('#question');
 var messageInputModal = document.querySelector('#message-modal');
 
-var isStorageSupport = true;
-var storage = {};
-
-try {
-  storage.nameInput = localStorage.getItem('nameInput');
-  storage.phoneInput = localStorage.getItem('phoneInput');
-  storage.messageInput = localStorage.getItem('messageInput');
-
-} catch (err) {
-  isStorageSupport = false;
-}
-
-if (storage) {
-  nameInput.value = storage.nameInput;
-  phoneInput.value = storage.phoneInput;
-  messageInput.value = storage.messageInput;
-}
-
 if (feedbackForm) {
-  feedbackForm.addEventListener('submit', function (evt) {
-    if (!nameInput.value || !phoneInput.value || !messageInput.value) {
-      evt.preventDefault();
+  feedbackForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem('nameInput', nameInput.value);
-        localStorage.setItem('phoneInput', phoneInput.value);
-        localStorage.setItem('messageInput', messageInput.value);
-      }
-    }
+    localStorage.setItem('name-field', nameInput.value);
+    localStorage.setItem('phone-field', phoneInput.value);
+    localStorage.setItem('question-field', messageInput.value);
   });
 }
 
-try {
-  storage.nameInputModal = localStorage.getItem('nameInputModal');
-  storage.phoneInputModal = localStorage.getItem('phoneInputModal');
-  storage.messageInputModal = localStorage.getItem('messageInputModal');
-
-} catch (err) {
-  isStorageSupport = false;
-}
-
-if (storage) {
-  nameInputModal.value = storage.nameInputModal;
-  phoneInputModal.value = storage.phoneInputModal;
-  messageInputModal.value = storage.messageInputModal;
-}
-
 if (modalForm) {
-  modalForm.addEventListener('submit', function (evt) {
-    if (!nameInputModal.value || !phoneInputModal.value || !messageInputModal.value) {
-      evt.preventDefault();
+  modalForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem('nameInputModal', nameInputModal.value);
-        localStorage.setItem('phoneInputModal', phoneInputModal.value);
-        localStorage.setItem('messageInputModal', messageInputModal.value);
-      }
-    }
+    localStorage.setItem('name-modal', nameInputModal.value);
+    localStorage.setItem('phone-modal', phoneInputModal.value);
+    localStorage.setItem('message-modal', messageInputModal.value);
   });
 }
