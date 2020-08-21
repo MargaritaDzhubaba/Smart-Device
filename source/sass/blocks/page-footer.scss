@@ -192,6 +192,12 @@
   margin-right: 10%;
 }
 
+@media (max-width: 1060px) {
+  .page-footer__service {
+    margin-right: 6%;
+  }
+}
+
 .page-footer__confidentiality-terms {
   margin-right: 2.2%;
 }
