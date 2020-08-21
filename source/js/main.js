@@ -36,7 +36,7 @@ if (modalCloseButton) {
 
 // Закрытие клавишей ESC
 window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === ESC_KEY) {
+  if (evt.key === ESC_KEY) {
     evt.preventDefault();
     if (!modal.classList.contains('modal--close')) {
       modal.classList.add('modal--close');

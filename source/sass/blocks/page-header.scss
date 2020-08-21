@@ -75,8 +75,7 @@
   letter-spacing: 0.05em;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: $accent-color;
     border-color: $accent-color;
   }

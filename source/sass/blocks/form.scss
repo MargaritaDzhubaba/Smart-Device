@@ -16,6 +16,7 @@
 
     border: 0;
     border-radius: 0;
+    box-shadow: none;
 
     &:hover,
     &:focus {
@@ -45,6 +46,8 @@
     width: 100%;
     min-height: 154px;
     margin-bottom: 45px;
+
+    resize: none;
   }
 }
 

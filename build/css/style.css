@@ -179,7 +179,7 @@ input[type="radio"].visually-hidden {
   width: 180px;
   margin-left: 49px;
   letter-spacing: 0.05em; }
-  .page-header__button:hover, .page-header__button:focus, .page-header__button:active {
+  .page-header__button:hover, .page-header__button:focus {
     color: #00b2ff;
     border-color: #00b2ff; }
 
@@ -624,7 +624,7 @@ input[type="radio"].visually-hidden {
   margin-right: 10%; }
 
 .page-footer__confidentiality-terms {
-  margin-right: 4.2%; }
+  margin-right: 2.2%; }
 
 .page-footer__developer {
   margin-left: auto; }
@@ -1071,7 +1071,7 @@ input[type="radio"].visually-hidden {
     border-color: #00b2ff; } }
 
 .services {
-  padding: 89px 0 128px;
+  padding: 89px 0 98px;
   background-color: #1b2d37; }
 
 .services__wrapper {
@@ -1112,6 +1112,7 @@ input[type="radio"].visually-hidden {
 .services__item {
   position: relative;
   width: 31.62%;
+  margin-bottom: 30px;
   font-family: "Roboto Condensed", "Aria", sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -1367,7 +1368,9 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     background: #19baff;
     border: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
     .form input:hover, .form input:focus,
     .form textarea:hover,
     .form textarea:focus {
@@ -1405,7 +1408,8 @@ input[type="radio"].visually-hidden {
   .form textarea {
     width: 100%;
     min-height: 154px;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    resize: none; }
 
 .form__submit {
   display: -webkit-box;
